@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import "./style/Gifs.css";
+
 export const Gif = () => {
   const GIPHY_API = `https://api.giphy.com/v1/gifs/search?api_key=yCH88qDr3JCOEEWuESg34aXKYSbyUVQc&limit=25&offset=0&q=`;
   let [search, setSearch] = useState("");
@@ -6,6 +8,7 @@ export const Gif = () => {
   let [loading, setLoading] = useState(false);
 
   const searchGif = () => {
+
     if (search.length > 0) {
       setLoading(true);
       fetch(GIPHY_API + search)
@@ -27,21 +30,21 @@ export const Gif = () => {
     }
   };
   return (
-    <div>
-      <h1>hello</h1>
-
+    <div className='gif'>
       <input
         type="text"
         placeholder="Serach Gifs"
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => {setSearch(e.target.value)
+            searchGif()
+        }}
       />
-      <button onClick={searchGif}>Search</button>
+      {/* <button onClick={searchGif}>Search</button> */}
 
       {gifs.map((gif) => {
         return (
-          <div>
-            <img src={gif} alt="" />
+          <div className='f'>
+            <img className='i' src={gif} alt="" />
           </div>
         );
       })}
