@@ -1,14 +1,14 @@
 .gif{
     border: 1px solid black;
-    width:100px;
-    /* height: 200px; */
+    width:230px;
+    height: 200px;
+    overflow-y: scroll;
 }
 .f{
     border: 5px solid red;
-    width:100px;
-    /* height: 200px; */
+    width:200px;
 }
 .i{
     width:100%;
-    /* height: 200; */
+    
 }

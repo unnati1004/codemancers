@@ -2,7 +2,6 @@ import "./style/Post.css";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import GifBoxIcon from '@mui/icons-material/GifBox';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -10,7 +9,7 @@ import VideoCallIcon from '@mui/icons-material/VideoCall';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-// import { width } from "@mui/system";
+import LockIcon from '@mui/icons-material/Lock';
 export const Post = () => {
   return (
     <div className="Post">
@@ -40,6 +39,14 @@ export const Post = () => {
       </Button>
       <Button variant="contained" disableElevation>
       <CalendarMonthIcon/> Tag event
+      </Button>
+      </div>
+      <div className="footer">
+      <Button variant="contained" disableElevation sx={{}}>
+      <LockIcon/> Only me
+      </Button>
+      <Button variant="contained" disableElevation>
+       Post
       </Button>
       </div>
     </div>
