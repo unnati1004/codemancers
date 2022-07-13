@@ -10,7 +10,11 @@ import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LockIcon from '@mui/icons-material/Lock';
+import { useState } from "react";
+import { Gif } from '../component/Gif';
+
 export const Post = () => {
+  const [state,setState] = useState(0)
   return (
     <div className="Post">
       <div className="navbar">
@@ -34,7 +38,7 @@ export const Post = () => {
       <Button variant="contained" disableElevation>
        <LocationOnIcon/>check in
       </Button>
-      <Button variant="contained" disableElevation>
+      <Button variant="contained" disableElevation onClick={()=>{setState(1)}}>
        <GifBoxIcon/> gif
       </Button>
       <Button variant="contained" disableElevation>
@@ -49,6 +53,9 @@ export const Post = () => {
        Post
       </Button>
       </div>
+      {
+        state?<Gif/>:""
+      }
     </div>
   );
 };

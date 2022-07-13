@@ -39,12 +39,11 @@ export const Gif = () => {
             searchGif()
         }}
       />
-      {/* <button onClick={searchGif}>Search</button> */}
 
-      {gifs.map((gif) => {
+      {gifs.map((g) => {
         return (
           <div className='f'>
-            <img className='i' src={gif} alt="" />
+            <img className='i' src={g} alt="" />
           </div>
         );
       })}
