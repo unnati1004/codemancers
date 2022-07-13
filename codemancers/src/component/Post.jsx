@@ -1,7 +1,7 @@
 import "./style/Post.css";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import GifBoxIcon from '@mui/icons-material/GifBox';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -24,38 +24,42 @@ export const Post = () => {
   return (
     <div className="Post">
       <div className="navbar">
-        <p> <BorderColorIcon/>Compose Post</p>
-        <p> <PhotoLibraryIcon/> Photo/Video Album</p>
-        <p> <VideoCallIcon/> Live Video</p>
+        <p> <BorderColorIcon fontSize="small"/>Compose Post</p>
+        <p> <PhotoLibraryIcon fontSize="small"/> Photo/Video Album</p>
+        <p> <VideoCallIcon fontSize="small"/> Live Video</p>
       </div>
+      <div className="area">
+      <AccountCircleIcon fontSize="large" style={{color:"rgb(216, 210, 210)"}}/>
       <TextField
         sx={{width: 500 }}
         multiline
         rows={2}
         variant="standard"
         placeholder= "Write Something here..."
+
         />
-      <img src={gif} alt="" />
+      </div>
+      <img src={gif} alt="" className="d"/>
       
       <div className="but">
-      <Button   sx={{fontSize:10}}>
-      <PersonAddIcon fontSize="small"/> Tag friends
+      <Button   sx={{fontSize:10,backgroundColor:"rgb(241, 238, 238)",color:"black"}}>
+      <PersonAddIcon fontSize="small" style={{color:"rgb(121, 200, 243)"}}/> Tag friends
       </Button>
-      <Button   sx={{fontSize:10}}>
-       <LocationOnIcon fontSize="small"/>check in
+      <Button   sx={{fontSize:10,backgroundColor:"rgb(241, 238, 238)",color:"black"}}>
+       <LocationOnIcon fontSize="small" style={{color:"rgb(243, 111, 111)"}}/>check in
       </Button>
-      <Button   onClick={()=>{setState(1)}} sx={{fontSize:10}}>
-       <GifBoxIcon fontSize="small"/> gif
+      <Button   onClick={()=>{setState(1)}} sx={{fontSize:10,backgroundColor:"rgb(241, 238, 238)",color:"black"}}>
+       <GifBoxIcon fontSize="small" style={{color:"rgb(213, 171, 250)"}}/> gif
       </Button>
-      <Button   sx={{fontSize:10}}>
-      <CalendarMonthIcon fontSize="small" style={{color:"red"}}/> Tag event
+      <Button   sx={{fontSize:10 ,backgroundColor:"rgb(241, 238, 238)",color:"black"}}>
+      <CalendarMonthIcon fontSize="small" style={{color:"rgb(243, 111, 111)"}}/> Tag event
       </Button>
       </div>
       <div className="footer">
-      <Button   sx={{fontSize:10}}>
+      <Button   sx={{fontSize:10,border:1,color:"black"}}>
       <LockIcon fontSize="small"/> Only me
       </Button>
-      <Button   sx={{fontSize:10}}>
+      <Button   sx={{fontSize:10,color:"black"}}>
        Post
       </Button>
       </div>

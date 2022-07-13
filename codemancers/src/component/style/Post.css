@@ -13,19 +13,28 @@
     justify-content: space-evenly;
     border-radius: 15px;
     padding: .5%;
-    font-size: small;
+    font-size: x-small;
 }
 .Post{
     /* border: 1px solid blue; */
-    width:500px;
+    width:90%;
     padding: 5%;
 }
 .but{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap:10px ;
+    
 }
 .footer{
     margin: 5px;
     background-color: rgb(241, 238, 238);
+    
+}
+.area{
+    display: flex;
+}
+.d{
+    width: 100%;
+
 }
