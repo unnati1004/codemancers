@@ -39,21 +39,21 @@ export const Post = () => {
       
       <div className="but">
       <Button variant="contained" disableElevation sx={{fontSize:10}}>
-      <PersonAddIcon/> Tag friends
+      <PersonAddIcon fontSize="small"/> Tag friends
       </Button>
       <Button variant="contained" disableElevation sx={{fontSize:10}}>
-       <LocationOnIcon/>check in
+       <LocationOnIcon fontSize="small"/>check in
       </Button>
       <Button variant="contained" disableElevation onClick={()=>{setState(1)}} sx={{fontSize:10}}>
-       <GifBoxIcon/> gif
+       <GifBoxIcon fontSize="small"/> gif
       </Button>
       <Button variant="contained" disableElevation sx={{fontSize:10}}>
-      <CalendarMonthIcon/> Tag event
+      <CalendarMonthIcon fontSize="small"/> Tag event
       </Button>
       </div>
       <div className="footer">
       <Button variant="contained" disableElevation sx={{fontSize:10}}>
-      <LockIcon fontSize="x-small"/> Only me
+      <LockIcon fontSize="small"/> Only me
       </Button>
       <Button variant="contained" disableElevation sx={{fontSize:10}}>
        Post
