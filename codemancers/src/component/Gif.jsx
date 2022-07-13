@@ -40,9 +40,9 @@ export const Gif = () => {
         }}
       />
 
-      {gifs.map((g) => {
+      {gifs.map((g,i) => {
         return (
-          <div className='f'>
+          <div className='f'key={i}>
             <img className='i' src={g} alt="" />
           </div>
         );

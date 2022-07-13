@@ -27,7 +27,7 @@ export const Post = () => {
         multiline
         rows={5}
         variant="standard"
-        placeholder= "Write Something.."
+        placeholder= "Write Something here..."
         />
         
       <img src="" alt="" />

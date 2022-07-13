@@ -1,17 +1,19 @@
 .navbar{
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* align-items: center; */
     justify-content: space-evenly;
     background-color: rgb(241, 238, 238);
 
 }
 .navbar>p{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+    border-radius: 15px;
+    padding: .5%;
+    font-size: small;
 }
 .Post{
     /* border: 1px solid blue; */
