@@ -24,8 +24,10 @@
 }
 .footer{
     margin: 5px;
-    background-color: rgb(241, 238, 238);
+    background-color: rgb(241, 245, 248);
+    width: 100%;
 }
+
 .area{
     display: flex;
 }

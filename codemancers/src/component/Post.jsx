@@ -56,10 +56,10 @@ export const Post = () => {
       </Button>
       </div>
       <div className="footer">
-      <Button   sx={{fontSize:10,border:1,color:"black"}}>
+      <Button   sx={{fontSize:10,border:1,color:"black",}}>
       <LockIcon fontSize="small"/> Only me
       </Button>
-      <Button   sx={{fontSize:10,color:"black"}}>
+      <Button   sx={{fontSize:10,color:"white",backgroundColor:"rgb(71, 172, 248)"}}>
        Post
       </Button>
       </div>
