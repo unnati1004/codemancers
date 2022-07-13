@@ -38,24 +38,24 @@ export const Post = () => {
       <img src={gif} alt="" />
       
       <div className="but">
-      <Button variant="contained" disableElevation sx={{fontSize:10}}>
+      <Button   sx={{fontSize:10}}>
       <PersonAddIcon fontSize="small"/> Tag friends
       </Button>
-      <Button variant="contained" disableElevation sx={{fontSize:10}}>
+      <Button   sx={{fontSize:10}}>
        <LocationOnIcon fontSize="small"/>check in
       </Button>
-      <Button variant="contained" disableElevation onClick={()=>{setState(1)}} sx={{fontSize:10}}>
+      <Button   onClick={()=>{setState(1)}} sx={{fontSize:10}}>
        <GifBoxIcon fontSize="small"/> gif
       </Button>
-      <Button variant="contained" disableElevation sx={{fontSize:10}}>
-      <CalendarMonthIcon fontSize="small"/> Tag event
+      <Button   sx={{fontSize:10}}>
+      <CalendarMonthIcon fontSize="small" style={{color:"red"}}/> Tag event
       </Button>
       </div>
       <div className="footer">
-      <Button variant="contained" disableElevation sx={{fontSize:10}}>
+      <Button   sx={{fontSize:10}}>
       <LockIcon fontSize="small"/> Only me
       </Button>
-      <Button variant="contained" disableElevation sx={{fontSize:10}}>
+      <Button   sx={{fontSize:10}}>
        Post
       </Button>
       </div>
